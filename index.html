@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<Head>
+<title> Home </title>
+</Head>
+
+<Body>
+
+<h1>Home</h1>
+<ul>
+				<li><a href= "index.html">Home </a></li>
+					<li><a href= "About.html">About</a></li>
+					<li><a href= "Contact.html">Contact</a></li>
+					
+				</ul>
+
+<h2> What is the purpose of this website? </h2>
+
+<p> This is our first milestone for our semester 
+long project. For our first milestone, our goal is to create a basic website using javascript, 
+github, and html that has a home page, and about page, and a contact  page. </p>
+
+</br>
+
+
+<h3> Who am I? </h3>
+<p> My name is Will Smathers and I am a 4th year Information Technology major at Kennesaw State pursuing a career in Cybersecurity. I grew up in 
+Pensacola, Florida then moved to Newnan, Georgia where I went to Middle and High School. Some of my favorite hobbies
+is to work and cars and play basketball.</p>
+
+<script>
+function changeimg(sw) {
+ var picture;
+ if (sw == 0) {
+picture = "./img/Newnan.jpg"
+}
+else if (sw == 1){
+picture = "./img/pensacola.jpg"
+}
+else if (sw == 2) {
+picture = "./img/bmw.jpg"
+}
+document.getElementById('image').src = picture;
+}
+</script>
+
+<img id="image" src="./img/pensacola.jpg" width="600" height="600">
+
+<p>
+<button type="button" onclick="changeimg(1)">Pensacola, Fl</button>
+<button type="button" onclick="changeimg(0)">Newnan, GA</button>
+<button type="button" onclick="changeimg(2)">My Old BMW M3</button>
+</p>
+ 
+</body>
+
+
+
+
+
+
+
+
+<style>
+
+h1 {
+	text-align: left;
+}
+
+h2 {
+	text-align: center;
+	font: Arial;
+}
+
+h3 {
+text-align: center;
+}
+
+p {
+	text-align: center;
+	font: Arial;
+	}
+	
+	#image {
+display: block;
+margin: auto;
+width: 900px;
+}
+
+li{
+	float: left;
+	display: inline;
+	}
+li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		}
+		
+	li a:hover {
+	background-color: gray;
+		}
+	
+	a {
+	display: block;
+	padding: 8px;
+	}
+	
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: slateblue;
+	}
+</style>
+
+
+</html>

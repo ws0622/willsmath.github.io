@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<Head>
+<title> About </title>
+</Head>
+
+<body>
+<h1>About</h1>
+<ul>
+				<li><a href= "index.html">Home </a></li>
+					<li><a href= "About.html">About</a></li>
+					<li><a href= "Contact.html">Contact</a></li>
+					
+				</ul>
+				
+				
+<h2>About Me</h2>
+<p> I was born in Pensacola, Florida where my father was an airline 
+mechanic and my mother was a school nurse. Around 2009 my dad 
+got offered a position at Delta Airlines, this caused us to move 
+to Newnan, Georgia where I spent most of my childhood. This is 
+where I found my love for computers and pretty much anything IT 
+related. I spent most of my free time in middle and High school 
+trying to tinker with my computer or build other peoples PCs for 
+spending money. Around High School is when I found my love for cars
+and basketball as well, so most of my free time consisted of playing basketball,
+working on computers, or helping my dad tinker with his car. 
+
+</br>
+</br>
+
+
+All of my friends ended up going to Kennesaw State because of their well
+known IT program, so I followed suit and went there as well. Now I am in my fourth 
+year here and have loved every second of it! I have also been involved in a few 
+extracurricular activities including the Rec Sports leagues that KSU offers along
+with working at AutoZone Part-Time for the past 3 years. Now I am actively looking
+for any sort of internship to get more experience and to learn more about the field. 
+
+</p>
+
+
+<script>
+function changeimg(sw) {
+ var picture;
+ if (sw == 0) {
+picture = "./img/Newnan2.jpg"
+}
+else {
+picture = "./img/pns.jpg"
+}
+document.getElementById('image').src = picture;
+}
+</script>
+
+<img id="image" src="./img/Newnan.jpg" width="600" height="600">
+
+<p>
+<button type="button" onclick="changeimg(1)">Pensacola, Fl</button>
+<button type="button" onclick="changeimg(0)">Newnan, GA</button>
+</p>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+<style>
+h1 {
+text-align: left;
+}
+
+
+h2 {
+text-align: center;
+font-family: verdana;
+
+}
+
+#image {
+display: block;
+margin: auto;
+width: 700px;
+}
+
+p {
+text-align: center;
+font-family: arial;
+font-size: 20px;
+
+
+margin-top: 40px;
+margin-bottom: 100px;
+margin-right: 80px;
+margin-left: 80px;
+background-color: lightgrey;
+border: 1px solid black;
+  
+}
+
+
+
+
+
+li{
+	float: left;
+	display: inline;
+	}
+li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		}
+		
+	li a:hover {
+	background-color: gray;
+		}
+	
+	a {
+	display: block;
+	padding: 8px;
+	}
+	
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: mediumseagreen;
+	}
+</style>
+
+</html>
