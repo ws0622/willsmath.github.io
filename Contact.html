@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html>
 
+<!-- Creating the head -->
 <Head>
+
+<!-- Creating the title -->
 <title> Contact </title>
 </Head>
 
+
+<!--creating the body of the page -->
 <body>
+
+
+<!-- Creating the header -->
 <h1>Contact Me!</h1>
+
+
+<!-- Creating the navigation bar -->
 <ul>
 				<li><a href= "index.html">Home </a></li>
 					<li><a href= "About.html">About</a></li>
@@ -15,19 +26,28 @@
 				</ul>
 				
 				
-	
+<!-- Creating the 2nd header and hyperlink -->	
 <h2> <a href="https://www.linkedin.com/in/will-smathers-1519b4226">Visit my LinkedIN profile!</a> </h2>	
 
 </br>
 
+<!-- Creating the third header -->
 <h3> Email: wsmathe1@students.kennesaw.edu </h3>
 
 </br>
-
+<!-- Creating the fourth header -->
 <h4> Phone Number: 850-454-6371 </h4>
 
-
+<!-- placing an image of myself -->
 <img id="image" src="./img/self.jpg" width="600" height="600">
+
+<h5> Leave your name and phone number if you want me to contact you! </h5>
+
+<form action="/submit-form" method="post">
+	<label for="nameandnumber">Enter Name and Phone Number Here</label>
+	<input type="text" id="nameandnumber" name="nameandnumber" required>
+	<button type="submit">Submit</button>
+</form>
 
 </body>
 
@@ -62,6 +82,18 @@ font-family: verdana;
 font-size: 20;
 text-align: center;
 }
+h5 {
+font-family: verdana;
+font-size: 20;
+text-align: center;
+}
+
+form {
+font-family: verdana;
+font-size: 20;
+text-align: center;
+}
+
 
 #image {
 display: block;
