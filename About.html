@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
 
+<!-- Creating the head -->
 <Head>
+<!-- Creating the title -->
 <title> About </title>
 </Head>
 
+<!--creating the body of the page -->
 <body>
+
+<!-- Creating the header -->
 <h1>About</h1>
+
+<!-- Creating the navigation bar -->
 <ul>
 				<li><a href= "index.html">Home </a></li>
 					<li><a href= "About.html">About</a></li>
@@ -14,8 +21,10 @@
 					
 				</ul>
 				
-				
+<!-- Creating the 2nd header -->
 <h2>About Me</h2>
+
+<!-- Creating the paragraph -->
 <p> I was born in Pensacola, Florida where my father was an airline 
 mechanic and my mother was a school nurse. Around 2009 my dad 
 got offered a position at Delta Airlines, this caused us to move 
@@ -27,6 +36,7 @@ spending money. Around High School is when I found my love for cars
 and basketball as well, so most of my free time consisted of playing basketball,
 working on computers, or helping my dad tinker with his car. 
 
+<!-- Creating a page break -->
 </br>
 </br>
 
@@ -40,7 +50,7 @@ for any sort of internship to get more experience and to learn more about the fi
 
 </p>
 
-
+<!-- Creating a javascript function to navigate through pictures -->
 <script>
 function changeimg(sw) {
  var picture;
@@ -54,9 +64,11 @@ document.getElementById('image').src = picture;
 }
 </script>
 
-<img id="image" src="./img/Newnan2.jpg" width="600" height="600">
+<!-- Creating the image and placecement -->
+<img id="image" src="./img/Newnan.jpg" width="600" height="600">
 
 <p>
+<!-- Creating the buttons for navigating through pictures -->
 <button type="button" onclick="changeimg(1)">Pensacola, Fl</button>
 <button type="button" onclick="changeimg(0)">Newnan, GA</button>
 </p>
@@ -72,10 +84,10 @@ document.getElementById('image').src = picture;
 
 
 
-
+<!-- Creating the CSS -->
 <style>
 h1 {
-text-align: left;
+text-align: center;
 }
 
 
