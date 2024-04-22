@@ -44,8 +44,14 @@
 <h5> Leave your name and phone number if you want me to contact you! </h5>
 
 <form action="/submit-form" method="post">
-	<label for="nameandnumber">Enter Name and Phone Number Here</label>
-	<input type="text" id="nameandnumber" name="nameandnumber" required>
+	<label for="name">Enter Name</label> 
+	</br>
+	<input type="text" id="name" name="name" required>
+	</br>
+	<label for="name">Enter Number</label> 
+	</br>
+	<input type="int" id="number" name="number" required>
+	</br>
 	<button type="submit">Submit</button>
 </form>
 
@@ -62,7 +68,7 @@
 <style>
 
 h1 {
-text-align: left;
+text-align: center;
 }
 
 h2 {
@@ -128,7 +134,8 @@ li a {
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
-		background-color: tomato;
+		background-color: blue;
+		text-align: center;
 	}
 </style>
 </html>
