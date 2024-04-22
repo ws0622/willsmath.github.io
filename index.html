@@ -1,34 +1,49 @@
 <!DOCTYPE html>
 <html>
 
+<!-- Creating the head -->
 <Head>
+<!-- Creating the title -->
 <title> Home </title>
 </Head>
 
+
+<!--creating the body of the page -->
 <Body>
 
+
+<!-- Creating the header -->
 <h1>Home</h1>
+
+<!-- Creating the navigation bar -->
 <ul>
 				<li><a href= "index.html">Home </a></li>
 					<li><a href= "About.html">About</a></li>
 					<li><a href= "Contact.html">Contact</a></li>
 					
 				</ul>
-
+<!-- Creating the 2nd header -->
 <h2> What is the purpose of this website? </h2>
 
+<!-- Creating the paragraph -->
 <p> This is our first milestone for our semester 
 long project. For our first milestone, our goal is to create a basic website using javascript, 
 github, and html that has a home page, and about page, and a contact  page. </p>
 
+
+<!-- Creating a page break -->
 </br>
 
-
+<!-- Creating the 3rd header -->
 <h3> Who am I? </h3>
+
+<!-- Creating another paragraph -->
 <p> My name is Will Smathers and I am a 4th year Information Technology major at Kennesaw State pursuing a career in Cybersecurity. I grew up in 
 Pensacola, Florida then moved to Newnan, Georgia where I went to Middle and High School. Some of my favorite hobbies
 is to work and cars and play basketball.</p>
 
+
+<!-- Creating a javascript function to navigate through pictures -->
 <script>
 function changeimg(sw) {
  var picture;
@@ -45,9 +60,13 @@ document.getElementById('image').src = picture;
 }
 </script>
 
+
+<!-- Creating the image and placecement -->
 <img id="image" src="./img/pensacola.jpg" width="600" height="600">
 
 <p>
+
+<!-- Creating the buttons for navigating through pictures -->
 <button type="button" onclick="changeimg(1)">Pensacola, Fl</button>
 <button type="button" onclick="changeimg(0)">Newnan, GA</button>
 <button type="button" onclick="changeimg(2)">My Old BMW M3</button>
@@ -61,11 +80,11 @@ document.getElementById('image').src = picture;
 
 
 
-
+<!-- Creating the CSS -->
 <style>
 
 h1 {
-	text-align: left;
+	text-align: center;
 }
 
 h2 {
